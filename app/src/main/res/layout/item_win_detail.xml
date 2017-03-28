@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:weightSum="2"
+        android:layout_height="30dp">
+        <TextView
+            android:id="@+id/tv_win_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:textColor="@color/home_text_color"
+            android:text="2016-11-27 10:26:23.685"/>
+        <TextView
+            android:id="@+id/tv_win_id"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:layout_marginLeft="6dp"
+            android:textColor="#C02237"
+            android:drawableLeft="@mipmap/img_arrows_red"
+            android:drawablePadding="9dp"
+            android:text="103908063"/>
+        <TextView
+            android:id="@+id/tv_win_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:textColor="#888787"
+            android:ellipsize="end"
+            android:text="黄金黄金到我家"/>
+
+
+    </LinearLayout>
+</LinearLayout>

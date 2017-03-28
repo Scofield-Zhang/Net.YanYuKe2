@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_join_success"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    tools:context="net.youlvke.yanyuke.net.yanyuke.youlvke.activity.JoinSuccessActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_tab" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/radio_bg"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="7dp"
+            android:text="恭喜您，参与成功"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="7dp"
+            android:text="请等待系统为您揭晓"
+            android:textColor="@color/home_text_color"
+            android:textSize="14sp" />
+        <Button
+            android:id="@+id/btn_continue_join"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/selector_btn_next"
+            android:layout_marginTop="20dp"
+            android:text="继续参与"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:background="#D8D8D8"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="159dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+    <TextView
+        android:id="@+id/tv_presell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_gray"
+        android:textSize="16sp"
+        android:layout_marginTop="25dp"
+        android:text="【预售】天生一对情侣套餐 （9人次）"/>
+        <TextView
+            android:layout_marginTop="58dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="18dp"
+            android:textColor="@color/home_text_color"
+            android:text="第20161109期\n购买时间：2016.09.12  13:12\n神秘号码：1000998"/>
+        <TextView
+            android:id="@+id/tv_check_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/home_text_color"
+            android:layout_marginTop="128dp"
+            android:drawableRight="@mipmap/arrows_right"
+            android:drawablePadding="10dp"
+            android:text="查看全部"/>
+
+
+
+    </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F0F0F0"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_btn_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_ff"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_btn_white"
+        android:layout_alignParentRight="true">
+
+        <RelativeLayout
+            android:id="@+id/rl_f1"
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_alignParentBottom="true"
+                android:background="#7F000000">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="11.5dp"
+                    android:text="56%"
+                    android:textColor="#fff"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="11.5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="剩余33份"
+                    android:textColor="#fff"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progress6"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_below="@id/rl_f1"
+            android:progress="56"
+            android:progressDrawable="@drawable/global_progressbar_color" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@id/progress6"
+            android:background="#2b3141"
+            android:gravity="center"
+            android:text="高端美国派克商务笔专用"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

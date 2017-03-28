@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_not_evaluate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="net.youlvke.yanyuke.activity.NotEvaluateActivity">
+
+    <include layout="@layout/include_tab" />
+    <ListView
+        android:id="@+id/lv_not_evaluate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/indictor_gray"
+        android:dividerHeight="1px" />
+
+</LinearLayout>

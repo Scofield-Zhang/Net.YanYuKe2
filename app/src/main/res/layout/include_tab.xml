@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:background="@color/main"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/wrap_xy"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="标题"
+            android:textColor="@color/text_address"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/ll_search"
+            android:layout_width="225dp"
+            android:layout_height="29dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/edit_tab"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/et_home_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:drawablePadding="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:hint="@string/text_search"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColor="@color/text_color_gray"
+                android:textColorHint="#CCCCCE"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/et_text" />
+
+            <ImageView
+                android:id="@+id/iv_home_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/search_icon" />
+        </RelativeLayout>
+        <!--android:drawableLeft="@mipmap/search_icon"-->
+        <TextView
+            android:id="@+id/tv_title2"
+            style="@style/wrap_xy"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="默认2"
+            android:textColor="@color/text_address"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_search"
+            style="@style/wrap_xy"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/tab_search"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+</LinearLayout>

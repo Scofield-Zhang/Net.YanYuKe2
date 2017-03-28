@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/fl_home"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_home"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:divider="@drawable/shape_line_f0"
+        android:showDividers="beginning"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/main_tab_bottom"
+            android:button="@null"
+            android:layout_weight="2"
+            android:drawableTop="@drawable/icon_home"
+            android:text="@string/tab_home"/>
+
+        <ImageView
+            android:id="@+id/iv_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="15dp"
+            android:layout_above="@id/rg_home"
+            android:src="@drawable/tab_home_country"/>
+
+        <cn.bingoogolapple.badgeview.BGABadgeRadioButton
+            android:id="@+id/rb_me"
+            style="@style/main_tab_bottom"
+            android:button="@null"
+            android:drawableTop="@drawable/icon_me"
+            android:text="@string/tab_me"
+            app:badge_dragable="true"
+            app:badge_gravity="rightCenter"
+            android:layout_weight="2"
+            app:badge_isResumeTravel="true"
+            app:badge_padding="6dp"/>
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_join"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="net.youlvke.yanyuke.net.yanyuke.youlvke.activity.MyJoinActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_tab"/>
+<RadioGroup
+    android:id="@+id/rg_join_group"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal">
+    <RadioButton
+        android:id="@+id/rb_join_ing"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:checked="true"
+        android:background="@drawable/selector_radio_bg"
+        android:text="进行中"/>
+
+    <RadioButton
+        android:id="@+id/rb_join_winning"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:gravity="center"
+        android:background="@drawable/selector_radio_bg"
+        android:textSize="16sp"
+        android:text="开奖中"/>
+
+    <RadioButton
+        android:id="@+id/rb_join_results"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:background="@drawable/selector_radio_bg"
+        android:text="已揭晓"/>
+
+</RadioGroup>
+<ListView
+    android:id="@+id/lv_my_join"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:dividerHeight="15dp"
+    android:cacheColorHint="#00000000"
+    android:background="@android:color/white"
+    android:fadingEdge="none"
+    android:fadingEdgeLength="0dp"
+    android:listSelector="#00000000"
+    android:divider="@color/select_date_bg_gray"
+    />
+    </LinearLayout>
+</RelativeLayout>

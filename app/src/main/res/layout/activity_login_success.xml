@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.youlvke.yanyuke.view.RegisterSuccessView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login_success"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".activity.LoginSuccess">
+
+    <include layout="@layout/include_tab" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/img_login_smile"
+        android:drawablePadding="11dp"
+        android:gravity="center"
+        android:text="@string/success_info"
+        android:textColor="@color/text_color_gray"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/img_login_success" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:text="@string/my_code"
+        android:textColor="@color/text_color_gray"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_mycode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="1234567"
+        android:textColor="@color/code_color"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_btn_next"
+        android:text="@string/invite_friends"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+</net.youlvke.yanyuke.view.RegisterSuccessView>

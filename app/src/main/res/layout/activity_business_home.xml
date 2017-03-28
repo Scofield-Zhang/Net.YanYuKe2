@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#FFF"
+              android:divider="@drawable/shape_line_f0"
+              android:orientation="vertical"
+              android:showDividers="middle|end">
+
+    <include layout="@layout/include_tab"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp">
+
+        <TextView
+            style="@style/wrap_xy"
+            android:text="@string/name"
+            android:textColor="@color/text_color_gray"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/et_business_name"
+            style="@style/fit_xy"
+            android:layout_marginLeft="30dp"
+            android:background="@android:color/transparent"
+            android:hint="输入您的真实姓名"
+            android:padding="5dp"
+            android:textColor="@color/text_color_gray"
+            android:textColorHint="@color/gray9"
+            android:textSize="14sp"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp">
+
+        <TextView
+            style="@style/wrap_xy"
+            android:text="@string/tel_num"
+            android:textColor="@color/text_color_gray"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/et_business_number"
+            style="@style/fit_xy"
+            android:layout_marginLeft="25dp"
+            android:background="@android:color/transparent"
+            android:hint="输入您的手机号码"
+            android:inputType="phone"
+            android:textColor="@color/text_color_gray"
+            android:textColorHint="@color/gray9"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
+
+        <TextView
+            style="@style/wrap_xy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test_code"
+            android:textColor="@color/text_color_gray"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/et_test_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/test_msg"
+            android:inputType="number"
+            android:textColor="@color/text_color_gray"
+            android:textColorHint="@color/gray9"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/btn_business_test_code"
+            android:layout_width="66dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_btn_test_nornal"
+            android:text="@string/get_test_code"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:gravity="center_vertical"
+        android:padding="15dp">
+
+        <TextView
+            style="@style/wrap_xy"
+            android:text="@string/provice"
+            android:textColor="@color/text_color_gray"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_choice_address"
+            style="@style/wrap_xy"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/arrows_right"
+            android:text="@string/choice"
+            android:textColor="@color/text_color_gray"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            style="@style/wrap_xy"
+            android:text="@string/detail_address"
+            android:textColor="@color/text_color_gray"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/et_detail_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:hint="请输入详细地址"
+            android:textColor="@color/text_color_gray"
+            android:textColorHint="@color/gray9"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp">
+
+        <TextView
+            style="@style/wrap_xy"
+            android:text="营业执照/其他证书"
+            android:textColor="@color/home_text_color"/>
+
+        <RadioGroup
+            android:id="@+id/rg_business_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/selector_radio"
+                android:drawablePadding="20dp"
+                android:gravity="center"
+                android:text="有"
+                android:textColor="@color/text_color_gray"
+                android:textSize="16sp"/>
+
+            <RadioButton
+                android:id="@+id/rb_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:button="@null"
+                android:drawableLeft="@drawable/selector_radio"
+                android:drawablePadding="20dp"
+                android:gravity="center"
+                android:text="无"
+                android:textColor="@color/text_color_gray"
+                android:textSize="16sp"/>
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F7"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="9dp"
+            android:textColor="@color/home_text_color"
+            android:text="@string/business_submit_msg"/>
+
+        <Button
+            android:id="@+id/btn_submit_apply"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/selector_btn_blue"
+            android:text="提交申请"
+            android:textColor="@color/text_address"
+            android:textSize="15sp"/>
+    </LinearLayout>
+</LinearLayout>

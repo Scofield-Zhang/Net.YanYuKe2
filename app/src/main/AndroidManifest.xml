@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="net.youlvke.yanyuke"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 支持iBeancon 需要蓝牙权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 支持个推3.0 电子围栏功能 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5126ff896c738f2bfa000438" />
+        <!-- 百度 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="zX2B0LVIslCxTOf9VRgYn8ffeV0TLh7G" />
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/AppTheme1" />
+
+        <!--
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        -->
+        <!-- 全球购界面 -->
+        <activity
+            android:name=".activity.GlobalShopActivity"
+            android:theme="@style/TranslucentTheme" />
+        <!-- 搜索页面 -->
+        <activity android:name=".activity.SearchActivity" />
+        <!-- 我的信息页面 -->
+        <activity android:name=".activity.LoginAndRegisterActivity" />
+        <!-- 个人详情界面 -->
+        <activity android:name=".activity.MePersonDetailActivity" />
+        <!-- 第一次设置地址界面 -->
+        <activity
+            android:name=".activity.SetAddressActivity"
+            android:launchMode="singleTask" />
+        <!-- 展示修改地址界面 -->
+        <activity android:name=".activity.AlterAddressActivity" />
+        <!-- 我的钱包界面 -->
+        <activity
+            android:name=".activity.MyWalletActivity"
+            android:theme="@style/TranslucentTheme" />
+        <!-- 我的钱包-提现界面 -->
+        <activity android:name=".activity.MyMoneyActivity" />
+        <!-- 账单详情 -->
+        <activity android:name=".activity.BillDetailActivity" />
+        <!-- 充值记录 -->
+        <activity android:name=".activity.RechargeRecodeActivity" />
+        <!-- 查看往期 -->
+        <activity android:name=".activity.CheckOldActivity" />
+        <!-- 我的管理界面 -->
+        <activity android:name=".activity.MyManagerActivity" />
+        <!-- 我的卡券包 -->
+        <activity android:name=".activity.MyCardBagActivity" />
+        <!-- 抵用券 -->
+        <activity android:name=".activity.MyVouchersActivity" />
+        <activity
+            android:name=".activity.HomeFoodThemeActivity"
+            android:theme="@style/TranslucentTheme" />
+        <!-- 绑定手机号码界面 -->
+        <activity android:name=".activity.BoundTelNumActivity" />
+        <activity android:name=".activity.BoundSuccessActivty" />
+        <!-- 商品详情界面 -->
+        <activity
+            android:name=".activity.ShopDetailActivity"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name=".activity.PayActivity"
+            android:theme="@style/TranslucentTheme" />
+        <!-- 参与成功界面 -->
+        <activity
+            android:name=".activity.PaySuccessActivity"
+            android:theme="@style/TranslucentTheme" />
+        <!-- 参与详情界面 -->
+        <activity
+            android:name=".activity.JoinDetailActivity"
+            android:theme="@style/TranslucentTheme" />
+        <!-- 我参与的 -->
+        <activity android:name=".activity.MyJoinActivity" />
+        <activity android:name=".activity.BusinessHomeActivity" />
+        <activity android:name=".activity.MyMessageActivity" />
+        <activity android:name=".activity.MyNotPayActivity" />
+        <activity android:name=".activity.WinBillDetailActivity" />
+        <activity android:name=".activity.OldAnnounceActivity" />
+        <activity android:name=".activity.AwardDetailActivity" />
+        <activity android:name=".activity.ShopCollectActivity" />
+        <activity android:name=".activity.RechargeActivity" />
+        <activity android:name=".activity.MyBuyRecordActivity" />
+        <activity android:name=".activity.WithdrawalSuccess" />
+        <activity
+            android:name=".activity.ContactCustomerActivity"
+            android:theme="@style/TranslucentTheme" />
+        <activity android:name=".activity.CardDisableActivity" />
+        <activity android:name=".activity.WinRuleActivity" />
+        <activity android:name=".activity.NotEvaluateActivity" />
+        <activity android:name=".activity.UserEvaluateActivity" />
+        <activity
+            android:name=".activity.LocationActivity"
+            android:theme="@style/TranslucentTheme" />
+        <activity android:name=".activity.SearchResultActivity" />
+        <activity android:name=".activity.GetBlankMoneyActivity" />
+        <activity android:name=".activity.GetMoneySumActivity" />
+        <activity android:name=".activity.ShowOrderActivity" />
+        <activity android:name=".activity.MotifyAddressActivity" />
+        <activity
+            android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="me.iwf.photopicker.PhotoPagerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".activity.EnlargePicActivity" />
+
+        <service
+            android:name=".service.YanyukePushService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice" />
+        <service android:name=".service.YanyukeIntentService" />
+
+        <!-- 微信回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105836937" />
+            </intent-filter>
+        </activity>
+        <!-- QQ回调 -->
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+
+        <!-- 友盟渠道 -->
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+        <!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".activity.LoginSuccess" />
+        <activity android:name=".activity.ProtocolActivity" />
+        <!-- 闪屏启动页 -->
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ParticipationActivity" />
+        <activity android:name=".activity.MyTabLayoutActivity"></activity>
+    </application>
+
+</manifest>

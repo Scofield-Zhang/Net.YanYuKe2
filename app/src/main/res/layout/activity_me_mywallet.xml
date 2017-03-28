@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="344dp"
+        android:fitsSystemWindows="true"
+        android:background="@drawable/mywallet_bg" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp"
+
+            android:src="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/iv_money"
+            android:layout_width="155dp"
+            android:layout_height="155dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/bg_money" />
+
+        <net.youlvke.yanyuke.view.CircleImageView
+            android:id="@+id/iv_head"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            app:border_width="2dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="57dp" />
+
+        <TextView
+            android:id="@+id/tv_yuanyu_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="烟雨币"
+            android:textSize="12sp"
+            android:textColor="@color/home_text_color" />
+
+        <TextView
+            android:id="@+id/tv_yuanyu_add_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_yuanyu_money_number"
+            android:layout_centerHorizontal="true"
+            android:text="充值"
+            android:layout_marginTop="15dp"
+            android:textColor="#fb704b"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_yuanyu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="245dp"
+            android:layout_marginTop="93dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/text_color_gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_yuanyu_money_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#000000"
+            android:text="100"
+            android:textColor="#94A4C9"
+            android:layout_marginTop="2dp"
+            android:textSize="27dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/tv_yuanyu_money"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:paddingTop="30dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_my_money"
+            android:layout_width="81dp"
+            android:layout_height="81dp" >
+
+            <ImageView
+                style="@style/wrap_xy"
+                android:background="@mipmap/bg_my_money" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="我的佣金"
+                android:textColor="@color/text_color_gray"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_buy_record"
+            android:layout_width="81dp"
+            android:layout_height="81dp"
+            android:layout_alignParentRight="true" >
+
+            <ImageView
+                style="@style/wrap_xy"
+                android:background="@mipmap/bg_buy_record" />
+
+            <TextView
+                android:id="@+id/tv_shop_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="购买记录"
+                android:textColor="@color/text_color_gray"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_add_record"
+            android:layout_width="81dp"
+            android:layout_height="81dp"
+            android:layout_below="@+id/rl_my_money"
+            android:layout_marginTop="30dp" >
+
+            <ImageView
+                style="@style/wrap_xy"
+                android:background="@mipmap/bg_add_money" />
+
+            <TextView
+                android:id="@+id/tv_recharge_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="充值记录"
+                android:textColor="@color/text_color_gray"
+                android:textSize="15dp"
+                 />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_manager"
+            android:layout_width="81dp"
+            android:layout_height="81dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/rl_buy_record"
+            android:layout_marginTop="30dp" >
+
+            <ImageView
+                style="@style/wrap_xy"
+                android:background="@mipmap/bg_manager" />
+
+            <TextView
+                android:id="@+id/tv_manager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="管理"
+                android:textColor="@color/text_color_gray"
+                android:textSize="15dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_marginLeft="15dp">
+
+
+        <!--<net.youlvke.yanyuke.view.CircleImageView
+            android:id="@+id/civ_participation_pic"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/d" />-->
+        <net.youlvke.yanyuke.view.CircleImageView
+            android:id="@+id/civ_participation_pic"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/d" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@id/civ_participation_pic"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_participation_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nihao"
+                android:textColor="@color/part_blue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_participation_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="nihao"
+                android:textColor="@color/stroke_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_participation_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="niha2222o"
+                android:textColor="@color/text_color_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_participation_ip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="nihao1111111"
+                android:textColor="@color/stroke_color" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

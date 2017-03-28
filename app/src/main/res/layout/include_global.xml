@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/rl_ee"
+        android:layout_width="170dp"
+        android:layout_height="300dp"
+        app:cardElevation="0px"
+        app:cardMaxElevation="2px"
+        app:cardUseCompatPadding="false"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_e1"
+                android:layout_width="match_parent"
+                android:layout_height="260dp">
+
+                <ImageView
+                    android:id="@+id/iv_new1_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#7F000000">
+
+                    <TextView
+                        android:id="@+id/tv_new1_progress_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="11.5dp"
+                        android:textColor="#fff"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/rv_new1_reduce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="11.5dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#fff"
+                        android:textSize="10sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/progress5"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/rl_e1"
+                android:progressDrawable="@drawable/global_progressbar_color" />
+
+            <TextView
+                android:id="@+id/tv_new_title"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_below="@id/progress5"
+                android:background="#2b3141"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/rl_ff"
+        android:layout_width="170dp"
+        android:layout_height="145dp"
+        android:layout_alignParentRight="true"
+        app:cardElevation="0px"
+        app:cardMaxElevation="2px"
+        app:cardUseCompatPadding="false"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_f1"
+                android:layout_width="match_parent"
+                android:layout_height="105dp">
+
+                <ImageView
+                    android:id="@+id/iv_new2_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:scaleType="fitXY"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#7F000000">
+
+                    <TextView
+                        android:id="@+id/tv_new2_progress_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="11.5dp"
+                        android:textColor="#fff"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_new2_reduce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="11.5dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#fff"
+                        android:textSize="10sp" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/progress6"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/rl_f1"
+                android:progressDrawable="@drawable/global_progressbar_color" />
+
+            <TextView
+                android:id="@+id/tv_new2_title"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_below="@id/progress6"
+                android:background="#2b3141"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/rl_gg"
+        android:layout_width="170dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rl_ff"
+        app:cardElevation="0px"
+        app:cardMaxElevation="2px"
+        app:cardUseCompatPadding="false"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_g1"
+                android:layout_width="match_parent"
+                android:layout_height="105dp">
+
+                <ImageView
+                    android:id="@+id/iv_new3_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#7F000000">
+
+                    <TextView
+                        android:id="@+id/tv_new3_progress_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="11.5dp"
+                        android:textColor="#fff"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_new3_reduce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="11.5dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#fff"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/progress7"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/rl_g1"
+                android:progressDrawable="@drawable/global_progressbar_color" />
+
+            <TextView
+                android:id="@+id/tv_new3_title"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_below="@id/progress7"
+                android:background="#2b3141"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_title3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_ee"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="28.5dp"
+        android:text="汇集精品，品质优异"
+        android:textColor="@color/text_color_gray" />
+
+
+</RelativeLayout>

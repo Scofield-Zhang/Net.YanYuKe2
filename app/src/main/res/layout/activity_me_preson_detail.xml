@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_address"
+    android:divider="@drawable/shape_line_f0"
+    android:showDividers="middle|end"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_tab" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:gravity="center_vertical"
+        android:padding="20dp">
+
+        <TextView
+            style="@style/wrap_xy"
+            android:layout_centerVertical="true"
+            android:textColor="@color/home_text_color"
+            android:text="@string/tv_detail_icon" />
+
+        <ImageView
+            android:id="@+id/iv_img_head"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/touxiang" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            style="@style/wrap_xy"
+            android:gravity="center_vertical"
+            android:textColor="@color/home_text_color"
+            android:text="@string/tv_detail_nickname" />
+
+        <TextView
+            android:id="@+id/tv_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/arrows_right"
+            android:textColor="@color/home_text_color"
+            android:gravity="center_vertical"
+            android:text="@string/tv_detail_name" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            style="@style/wrap_xy"
+            android:gravity="center_vertical"
+            android:text="@string/tv_detail_date"
+            android:textColor="@color/home_text_color"
+            android:contextClickable="false" />
+
+        <TextView
+            android:id="@+id/tv_select_date"
+            style="@style/wrap_xy"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/arrows_right"
+            android:gravity="center_vertical"
+            android:textColor="@color/home_text_color"
+            android:text="@string/tv_detail_birthday" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_telNum"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            style="@style/wrap_xy"
+            android:gravity="center_vertical"
+            android:textColor="@color/home_text_color"
+            android:text="@string/tv_detail_telnum" />
+
+        <TextView
+            android:id="@+id/tv_select_num"
+            style="@style/wrap_xy"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/arrows_right"
+            android:gravity="center_vertical"
+            android:textColor="@color/home_text_color"
+            android:text="@string/tv_detail_text_number" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_add_address"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:textColor="@color/home_text_color"
+        android:paddingRight="12dp">
+
+        <TextView
+            style="@style/wrap_xy"
+            android:gravity="center_vertical"
+            android:textColor="@color/home_text_color"
+            android:text="@string/tv_detail_shop_address" />
+
+        <TextView
+            style="@style/wrap_xy"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/arrows_right"
+            android:textColor="@color/home_text_color"
+            android:gravity="center_vertical"
+            android:text="@string/tv_detail_add_change" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/tv_Masker"
+        android:layout_marginTop="3dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#e0000000"
+        android:visibility="invisible" />
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_win_bill_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/select_date_bg_gray"
+    tools:context="net.youlvke.yanyuke.activity.WinBillDetailActivity">
+
+    <include layout="@layout/include_tab"/>
+    <ListView
+        android:id="@+id/lv_win_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:dividerHeight="15dp"
+        />
+</LinearLayout>

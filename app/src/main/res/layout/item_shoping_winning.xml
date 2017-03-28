@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical">
+
+    <net.youlvke.yanyuke.view.CountDownView
+        android:id="@+id/tv_countTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="09:03:11"
+        android:textColor="#C55555"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="正在开奖 "
+        android:textColor="#C55555"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp">
+        <!---->
+        <net.youlvke.yanyuke.view.CustomImageView
+            android:id="@+id/iv_pic_1"
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:src="@mipmap/pic1"
+            app:cirRadius="5dp" />
+
+        <TextView
+            android:id="@+id/tv_pay_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.5dp"
+            android:layout_toRightOf="@id/iv_pic_1"
+            android:ellipsize="end"
+            android:lineSpacingExtra="8dp"
+            android:lines="2"
+            android:text="【预售】长长久久天长地久天生一对情侣套餐"
+            android:textColor="@color/text_color_gray" />
+
+        <TextView
+            android:id="@+id/tv_join_desc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_pay_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="18.5dp"
+            android:layout_toRightOf="@id/iv_pic_1"
+            android:lineSpacingExtra="10dp"
+            android:text="第20161109期\n本次参与9人次"
+            android:textColor="@color/home_text_color"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+</LinearLayout>

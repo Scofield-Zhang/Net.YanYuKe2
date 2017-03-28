@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_award_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/main"
+    tools:context="net.youlvke.yanyuke.activity.AwardDetailActivity">
+
+    <include layout="@layout/include_tab" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/iv_shop_detail"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="215dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_shop_detail"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="22dp"
+                android:background="@drawable/shape_btn_mian"
+                android:gravity="center"
+                android:text="已揭晓"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_goods_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="乡里乡亲5-10元用餐券，总价值598元"
+                android:textColor="@color/home_text_color" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_shop_detail"
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:layout_below="@id/ll_show"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/shape_btn_yellow"
+            android:paddingTop="22dp">
+            <!--  -->
+            <net.youlvke.yanyuke.view.CircleImageView
+                android:id="@+id/iv_award_detail"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                app:border_color="#00000000"/>
+
+            <TextView
+                android:id="@+id/tv_awardwer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@id/iv_award_detail"
+                android:text="获奖者：用户186****4561"
+                android:textColor="@color/home_text_color" />
+
+            <TextView
+                android:id="@+id/tv_shop_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_awardwer"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/iv_award_detail"
+                android:text="商品期数：100000025"
+                android:textColor="@color/home_text_color" />
+
+            <TextView
+                android:id="@+id/tv_awardwer_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_shop_num"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/iv_award_detail"
+                android:text="本次参与：10人次"
+                android:textColor="@color/home_text_color" />
+
+            <View
+                android:id="@+id/v_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="88dp"
+                android:background="@color/indictor_gray" />
+
+            <TextView
+                android:id="@+id/tv_mysterious_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v_indicator"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@mipmap/iv_heart"
+                android:drawablePadding="10dp"
+                android:text="神秘代码：10000002"
+                android:textColor="@color/text_color_gray"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/rl_shop_detail"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_btn_f0"
+            android:gravity="center"
+            android:text="您没有参与本次夺宝"
+            android:textColor="@color/home_text_color" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/tv_sequence_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="第10000020期正在火热进行中……"
+                android:background="@color/select_date_bg_gray"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:textColor="#c83838" />
+            <TextView
+                android:id="@+id/tv_go_on"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:text="立即前往"
+                android:paddingLeft="10dp"
+                android:background="@mipmap/btn_gray_bg"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

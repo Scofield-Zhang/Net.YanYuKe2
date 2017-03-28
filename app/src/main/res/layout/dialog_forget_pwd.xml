@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="135dp"
+    android:background="@drawable/shape_reword_bg"
+    android:orientation="vertical"
+    android:paddingLeft="25dp">
+
+    <TextView
+        android:id="@+id/tv_bound_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="已绑定手机187****5576"
+        android:textColor="@color/stroke_color"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/et_test_code"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:inputType="number"
+            android:textSize="16sp"
+            android:maxLength="6"
+            android:gravity="center"
+            android:textColor="@color/text_color_gray"
+            android:background="@android:color/transparent" />
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/et_test_code"
+            android:background="#a0a0a0"
+            android:id="@+id/view" />
+
+        <Button
+            android:id="@+id/btn_test_code"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_btn_test_nornal"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="@string/get_test_code"
+            android:textColor="@color/text_color_gray"
+            android:textSize="16sp"
+            android:layout_above="@+id/view" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13.5dp"
+        android:text="验证码错误！"
+        android:visibility="invisible"
+        android:textColor="#FA8C7D" />
+</LinearLayout>

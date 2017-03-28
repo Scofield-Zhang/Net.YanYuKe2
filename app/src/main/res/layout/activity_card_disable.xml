@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_card_disable"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/indictor_gray"
+    android:orientation="vertical"
+    tools:context="net.youlvke.yanyuke.activity.CardDisableActivity">
+
+    <include layout="@layout/include_tab" />
+
+    <ListView
+        android:id="@+id/lv_card_disable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="none"
+        android:layout_marginTop="15dp"
+        android:divider="@color/indictor_gray"
+        android:dividerHeight="15dp" />
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:divider="@drawable/shape_line_f0"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/iv_pic_1"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_search_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/iv_pic_1"
+            android:ellipsize="end"
+            android:lineSpacingExtra="8dp"
+            android:lines="2"
+            android:text="长长久久天长地久天\n生一对情侣套餐"
+            android:textColor="@color/text_color_gray" />
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="5dp"
+            android:layout_alignLeft="@+id/tv_search_title"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/tv_search_title"
+            android:layout_marginTop="10dp"
+            android:progress="56"
+            android:progressDrawable="@drawable/global_progressbar_color" />
+
+        <TextView
+            android:id="@+id/tv_search_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="80dp"
+            android:layout_toRightOf="@+id/iv_pic_1"
+            android:text="参与进度66%"
+            android:textColor="@color/home_text_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_search_residue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="80dp"
+            android:text="剩余份数333份"
+            android:textColor="@color/home_text_color"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</LinearLayout>

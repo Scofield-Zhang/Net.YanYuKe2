@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_get_blank_money"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/indictor_gray"
+    tools:context="net.youlvke.yanyuke.net.yanyuke.youlvke.activity.GetBlankMoneyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_tab" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:layout_width="113dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="持卡人姓名"
+                android:textColor="@color/text_color_gray"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_input_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="开户人的真实姓名"
+                android:background="@android:color/white"
+                android:textColor="@color/text_color_gray"
+                android:textColorHint="#999999"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:background="@android:color/transparent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@android:color/white"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/tv_choise_bank"
+                android:layout_width="113dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="选择银行"
+                android:textColor="@color/text_color_gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_bank_name"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_choise_bank"
+                android:gravity="center_vertical"
+                android:text="中国农业银行"
+                android:textColor="#999999"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_drop_down"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/img_drop_down" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:background="@android:color/transparent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:layout_width="113dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="银行卡号"
+                android:textColor="@color/text_color_gray"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_bank_count"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="19位银行卡号"
+                android:inputType="number"
+                android:textColor="@color/text_color_gray"
+                android:textColorHint="#999999"
+                android:background="@android:color/white"
+               android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:background="#a6acb9"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/indictor_gray"
+        android:textSize="16sp" />
+</RelativeLayout>

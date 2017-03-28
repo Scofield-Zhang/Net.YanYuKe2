@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_location"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img_location_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="net.youlvke.yanyuke.activity.LocationActivity">
+
+    <include layout="@layout/include_tab" />
+
+    <TextView
+        android:id="@+id/tv_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@mipmap/img_location"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:text="浙江-杭州"
+        android:textColor="@color/text_color_gray"
+        android:textSize="18sp" />
+
+        <net.youlvke.yanyuke.view.RollCircleView
+            android:id="@+id/rcv_select_address"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="20dp" />
+
+
+
+    <Button
+        android:id="@+id/btn_select_area"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:background="@drawable/shape_btn_circle"
+        android:text="GO" />
+
+
+</LinearLayout>

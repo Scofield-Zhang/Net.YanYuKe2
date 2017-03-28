@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="270dp"
+    android:background="#fff"
+    android:divider="@drawable/shape_line_f0"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="21dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/btnSubmit"
+            style="@style/wrap_xy"
+            android:layout_alignParentRight="true"
+            android:text="确定"
+            android:textColor="#3EBEFB"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/btnCancel"
+            style="@style/wrap_xy"
+            android:layout_alignBaseline="@+id/btnSubmit"
+            android:layout_alignBottom="@+id/btnSubmit"
+            android:layout_alignParentLeft="true"
+            android:text="取消"
+            android:textColor="@color/text_color_gray"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/optionspicker"
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:orientation="horizontal">
+
+        <net.youlvke.yanyuke.view.listener.WheelView
+            android:id="@+id/options1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <net.youlvke.yanyuke.view.listener.WheelView
+            android:id="@+id/options2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"/>
+
+        <net.youlvke.yanyuke.view.listener.WheelView
+            android:id="@+id/options3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

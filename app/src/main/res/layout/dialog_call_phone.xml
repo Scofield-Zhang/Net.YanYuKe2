@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:background="@drawable/shape_btn_white"
+        android:divider="@drawable/shape_line_f0"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="是否拨打电话？"
+            android:textSize="19sp"
+            android:textColor="@color/text_color_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:background="@drawable/shape_btn_white"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tv_call_phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="19sp"
+                android:text="确定"
+                android:textColor="#007AFF" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/indictor_gray"/>
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="19sp"
+                android:text="取消"
+                android:textColor="@color/gray9" />
+
+        </LinearLayout>
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:background="@drawable/shape_btn_white"
+        android:divider="@drawable/shape_line_f0"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="是否拨打电话？"
+            android:textSize="18sp"
+            android:textColor="@color/text_color_gray" />
+
+
+
+            <TextView
+                android:id="@+id/tv_call_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="确定"
+                android:textColor="#007AFF" />
+
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="取消"
+            android:textColor="@color/gray9" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+

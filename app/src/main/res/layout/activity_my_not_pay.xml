@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_not_pay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="net.youlvke.yanyuke.net.yanyuke.youlvke.activity.MyNotPayActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_tab"/>
+
+        <net.youlvke.yanyuke.view.SwipeMenuListView
+            android:id="@+id/lv_not_use"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/select_date_bg_gray"
+            android:dividerHeight="1px"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:listSelector="#00000000">
+
+        </net.youlvke.yanyuke.view.SwipeMenuListView>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#C55555"
+        android:text="确认付款"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"/>
+
+
+</RelativeLayout>

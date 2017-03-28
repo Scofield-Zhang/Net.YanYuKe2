@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:prp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_tab" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/indictor_gray"
+        android:gravity="center"
+        android:ellipsize="marquee"
+        android:textColor="@color/home_text_color"
+        android:text="@string/recharge_protocol"
+        android:textSize="11sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="246dp"
+        android:orientation="vertical"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:paddingTop="50dp">
+
+        <GridView
+            android:id="@+id/gv_recharge_type"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:choiceMode="singleChoice"
+            android:horizontalSpacing="15dp"
+            android:numColumns="3"
+            android:verticalSpacing="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_recharge_rectangle_normal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="77dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#84ccc9"
+                android:gravity="center"
+                android:text="其他"
+                android:textColor="@color/text_color_gray"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_choise_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                android:textColor="@color/home_text_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/indictor_gray"
+        android:gravity="center"
+        android:text="@string/pay_method"
+        android:textColor="@color/home_text_color"
+        android:textSize="12sp" />
+
+    <net.youlvke.yanyuke.view.PayRadioGroup
+
+        android:id="@+id/pay_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@android:color/white"
+        android:divider="@drawable/shape_line_f0"
+        android:showDividers="middle|end|beginning|none"
+        android:weightSum="3"
+        prp:orientation="vertical">
+
+        <net.youlvke.yanyuke.view.PayRadioPurified
+            android:id="@+id/prp_alipay"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center_vertical"
+            prp:checkedPrb="true"
+            prp:logoPrb="@mipmap/iv_alipay"
+            prp:radioPrb="@drawable/selector_radio"
+            prp:titlePrb="支付宝支付" />
+
+
+        <net.youlvke.yanyuke.view.PayRadioPurified
+            android:id="@+id/prp_wechat"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center_vertical"
+            prp:logoPrb="@mipmap/iv_wechat_pay"
+            prp:radioPrb="@drawable/selector_radio"
+            prp:titlePrb="微信支付" />
+
+
+        <net.youlvke.yanyuke.view.PayRadioPurified
+            android:id="@+id/prp_union"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center_vertical"
+            prp:logoPrb="@mipmap/iv_union_pay"
+            prp:radioPrb="@drawable/selector_radio"
+            prp:titlePrb="银联支付" />
+    </net.youlvke.yanyuke.view.PayRadioGroup>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/selector_btn_next"
+        android:text="下一步"
+        android:layout_gravity="bottom"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+</LinearLayout>
+
+

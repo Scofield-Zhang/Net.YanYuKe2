@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="423dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/cancel" />
+
+        <ListView
+            android:id="@+id/lv_vouchers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:choiceMode="singleChoice"
+            android:scrollbars="none"
+            android:background="@drawable/shape_btn_white"
+            android:divider="@drawable/line_dash_horizontal"
+            android:dividerHeight="1.5dp"
+            android:layerType="software" />
+    </LinearLayout>
+</LinearLayout>

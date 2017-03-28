@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_shop_bg"
+    android:layout_height="132dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/iv_pay_img"
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_pay_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.5dp"
+            android:layout_toRightOf="@id/iv_pay_img"
+            android:ellipsize="end"
+            android:lineSpacingExtra="8dp"
+            android:lines="2"
+            android:textColor="@color/text_color_gray"/>
+
+        <TextView
+            android:id="@+id/tv_pay_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_pay_title"
+            android:layout_marginLeft="15.5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/iv_pay_img"
+            android:lineSpacingExtra="10dp"
+
+            android:textColor="@color/home_text_color"
+            android:textSize="12sp"/>
+        <CheckBox
+            android:id="@+id/cb_is_choise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/white"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

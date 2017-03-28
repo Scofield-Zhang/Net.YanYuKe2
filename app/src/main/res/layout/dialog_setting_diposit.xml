@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="340dp"
+    android:layout_height="178dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_cancel"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:src="@mipmap/cancel" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_reword_bg"
+        android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <TextView
+        android:id="@+id/tv_set_deposit_pswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26.5dp"
+        android:layout_centerVertical="true"
+        android:text="@string/set_deposit_pswd"
+        android:layout_marginRight="26.5dp"
+        android:textColor="@color/home_text_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_forget_deposit_pswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forget_deposit_pswd"
+        android:textColor="@color/home_text_color"
+        android:layout_marginRight="26dp"
+        android:visibility="invisible"
+        android:textSize="16sp"
+        android:layout_alignBaseline="@+id/tv_set_deposit_pswd"
+        android:layout_alignBottom="@+id/tv_set_deposit_pswd"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="26dp" />
+</RelativeLayout>
+
+
+        <com.jungly.gridpasswordview.GridPasswordView
+            android:id="@+id/gpv_content"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="26.5dp"
+            android:layout_marginRight="26.5dp"
+            android:background="@android:color/white"
+            app:gpvGridColor="@android:color/white"
+            app:gpvLineColor="@color/text_color_gray"
+            app:gpvLineWidth="0.5dp"
+            app:gpvPasswordLength="6"
+            app:gpvPasswordTransformation="*"
+            app:gpvPasswordType="numberPassword"
+            app:gpvTextColor="@android:color/black"
+            app:gpvTextSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26.5dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@mipmap/action"
+            android:drawablePadding="10dp"
+            android:textColor="#FA8C7D"
+            android:textSize="12sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_join_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    tools:context="net.youlvke.yanyuke.net.yanyuke.youlvke.activity.JoinDetailActivity">
+
+
+        <include layout="@layout/include_tab" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="107dp"
+            android:background="#F0F0F0"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="【预售】罗马尼亚天生一对情侣套餐"
+                android:textColor="@color/text_color_gray"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/tv_join_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="第20161109期 / 已参与9人次"
+                android:layout_marginLeft="6dp"
+                android:textColor="@color/home_text_color" />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gv_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22.5dp"
+            android:numColumns="4"
+            android:paddingLeft="20dp"
+            android:gravity="center"
+            android:paddingRight="20dp"
+            android:horizontalSpacing="25dp"
+            android:verticalSpacing="12.5dp"></GridView>
+
+
+    </LinearLayout>
+

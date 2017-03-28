@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="267dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:divider="@drawable/shape_line_f0"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp">
+
+        <net.youlvke.yanyuke.view.CustomImageView
+            android:id="@+id/iv_pic_1"
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            app:cirRadius="5dp"
+            android:src="@mipmap/pic1"
+            />
+
+        <TextView
+            android:id="@+id/tv_pay_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.5dp"
+            android:layout_toRightOf="@id/iv_pic_1"
+            android:ellipsize="end"
+            android:lineSpacingExtra="8dp"
+            android:lines="2"
+            android:text="【预售】长长久久天长地久天生一对情侣套餐"
+            android:textColor="@color/text_color_gray"/>
+
+        <TextView
+            android:id="@+id/tv_join_desc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_pay_title"
+            android:layout_marginLeft="15.5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/iv_pic_1"
+            android:lineSpacingExtra="10dp"
+            android:text="第20161109期\n本次参与9人次"
+            android:textColor="@color/home_text_color"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_pay_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="117dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="15dp"
+            android:textColor="@color/text_color_gray"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_join_desc3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="117dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:lineSpacingExtra="15dp"
+            android:text="总        需  888人次\n揭晓时间  2016.11.11  13：09：00"
+            android:textColor="@color/text_color_gray"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

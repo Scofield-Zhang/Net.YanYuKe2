@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="600dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+<RelativeLayout
+    android:layout_width="265dp"
+    android:layout_height="270dp"
+    android:layout_marginTop="40dp"
+    android:layout_marginLeft="10dp"
+    android:background="@drawable/shape_bg_grade">
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text_color_gray"
+        android:textSize="16sp"
+        android:text="李晓明"/>
+    <TextView
+        android:id="@+id/tv_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:textColor="@color/text_color_gray"
+        android:textSize="14sp"
+        android:text="评分"
+        android:layout_marginLeft="14dp"/>
+    <net.youlvke.yanyuke.view.RatingBar
+        android:id="@+id/rb_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        app:starImageSize="18dp"
+        app:starPadding="10dp"
+        app:starEmpty="@mipmap/rating_bar_normal"
+        app:starFill="@mipmap/rating_bar_selected"
+        app:clickable="false"
+        app:starCount="5"
+        app:starStep="0"
+        android:layout_marginLeft="64dp"/>
+    <TextView
+        android:id="@+id/tv_grade_detail"
+        android:layout_width="match_parent"
+        android:layout_below="@id/tv_grade"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="14dp"
+        android:lineSpacingExtra="10dp"
+        android:textSize="14sp"
+        android:maxLength="100"
+        android:textColor="@color/text_color_gray"
+        android:text="@string/grade_detail"
+        android:layout_height="145dp" />
+    <TextView
+        android:id="@+id/tv_evaluate_issue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginBottom="15dp"
+        android:text="期号  00000020"/>
+
+
+</RelativeLayout>
+    <!--<ListView
+        android:id="@+id/lv_grade_img"
+        android:layout_width="60dp"
+        android:layout_height="270dp"
+        android:divider="@drawable/shape_line_translate"
+        android:dividerHeight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"/>-->
+    <!--<net.youlvke.yanyuke.view.CustomImageView
+        android:id="@+id/lv_grade_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/c"
+        android:layout_marginRight="10dp"
+        app:cirRadius="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"/>-->
+    <LinearLayout
+        android:id="@+id/ll_share_detail"
+        android:layout_width="60dp"
+        android:layout_height="270dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentRight="true"
+        android:divider="@drawable/shape_divider"
+        android:showDividers="middle"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+<!--
+net.youlvke.yanyuke.view.Circle
+
+ -->
+    <net.youlvke.yanyuke.view.CircleImageView
+        android:id="@+id/civ_head_img"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:scaleType="center"
+        app:border_color="@android:color/white"
+        app:border_width="3dp"
+        />
+
+
+</RelativeLayout>

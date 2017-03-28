@@ -1,0 +1,23 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="slidingmenu_offset">180dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">5dp</dimen>
+    <dimen name="bottom_tab_padding_drawable">3.0dip</dimen>
+    <!-- imageView -->
+    <dimen name="bottom_tab_padding_center_drawable">2.0dip</dimen>
+    <dimen name="bottom_tab_padding_up">20dip</dimen>
+    <!-- 上边距 -->
+    <dimen name="bottom_tab_center_padding_up">3dip</dimen>
+    <dimen name="bottom_tab_font_size">14.0sp</dimen>
+    <!-- 导航字体 -->
+    <dimen name="home_text">12dp</dimen>
+    <dimen name="home_arrows">5dp</dimen>
+    <dimen name="et_text">10sp</dimen>
+    <!-- 控件的高度 -->
+    <dimen name="tab_height">48dp</dimen>
+    <!-- 选项文字大小 需要配合 bools.xml 的 pickerview_customTextSize 为 true 才有效果-->
+    <dimen name="pickerview_textsize">20sp</dimen>
+</resources>

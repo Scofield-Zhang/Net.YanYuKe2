@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_value">#FD557B</color>
+    <color name="text_color">#000</color>
+    <color name="text_address">#fff</color>
+    <color name="search_color">#eeeeee</color>
+    <!-- 描边的颜色 -->
+    <color name="stroke_color">#999999</color>
+    <!-- 主页字体颜色 -->
+    <color name="home_text_color">#666666</color>
+    <!-- 导航栏的颜色 -->
+    <color name="tab_color">#FD587B</color>
+    <!-- 等级的颜色 -->
+    <color name="user_grade">#FD587B</color>
+    <!-- 登录指示器蓝色 -->
+    <color name="indictor_blue">#3BBCF9</color>
+    <color name="indictor_gray">#d8d8d8</color>
+    
+    <color name="btn_test_color">#FDEBF1</color>
+    <color name="main_red">#FC7390</color>
+    <color name="text_color_gray">#333333</color>w
+    <color name="select_date_bg_gray">#F0F0F0</color>
+    
+    <color name="province_line_border">#D0D0D0</color>
+    <color name="login_button_normal">#169fff</color>
+    <color name="login_button_pressed">#1073b9</color>
+    <color name="listview_bg">#FAFAFA</color>
+    
+     <color name="pickerview_wheelview_textcolor_out">#A8A8A8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="division_line">#2a2a2a</color>
+    <color name="home_tab_color">#75826f</color>
+    <color name="touming">#00000000</color>
+    <color name="radio_bg">#C55555</color>
+    <color name="gray9">#999999</color>
+    <color name="collect_red">#C65655</color>
+    <color name="main">#5A667F</color>
+
+    <color name="bills_color">#7ECEF4</color>
+
+    <color name="yellow1">#FACF3D</color>
+    <color name="actoin_red">#F2798F</color>
+    <color name="it_blue">#799EF2</color>
+    <color name="food_yellow">#F2B345</color>
+    <color name="play_orange">#F29B79</color>
+    <color name="county_blue">#79BDF2</color>
+    <color name="navpage">#FFE1E8EB</color>
+    <color name="code_color">#DE3939</color>
+    <color name="location_blue">#4E7DA4</color>
+    <color name="part_blue">#4487D2</color>
+    <color name="bill_red">#FD7691</color>
+    <color name="dialog_bg">#F7AAAAAA</color>
+    <color name="color_blue">#1DBAF1</color>
+    <color name="gray_indicator">#DCDCDC</color>
+    <color name="bill_blue">#4FBADF</color>
+    <color name="vouchers_blue">#7ECEF4</color>
+
+
+
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_marginRight="10dp">
+
+        <net.youlvke.yanyuke.view.CustomImageView
+            android:id="@+id/civ_collect_shop"
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            app:cirRadius="5dp"
+            android:src="@mipmap/img_award_detail" />
+        <TextView
+            android:id="@+id/tv_shop_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:textSize="16sp"
+            android:layout_toRightOf="@id/civ_collect_shop"
+            android:layout_marginLeft="15dp"
+            android:text="罗马尼亚天生一对情侣套餐"
+            android:textColor="@color/text_color_gray" />
+        <Button
+            android:id="@+id/btn_cacel_collect"
+            android:layout_width="77dp"
+            android:layout_height="29dp"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/collect_red"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_red_translate"
+            android:text="已收藏"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

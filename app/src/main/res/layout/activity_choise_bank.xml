@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:divider="@drawable/shape_line_f0"
+    android:showDividers="middle"
+    android:padding="5dip" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/tv_nongye_bank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_gray"
+        android:text="农业银行"
+        android:layout_centerInParent="true"
+        android:drawablePadding="20dp"
+        android:gravity="center"
+        android:drawableLeft="@mipmap/img_ny"
+        android:textSize="16sp" />
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/tv_jianshen_bank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_gray"
+        android:text="建设银行"
+        android:drawablePadding="20dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:gravity="start|left|center_vertical"
+        android:drawableLeft="@mipmap/img_js"
+        android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="60dp">
+    <TextView
+        android:id="@+id/tv_gongshang_bank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_gray"
+        android:layout_centerInParent="true"
+        android:text="工商银行"
+        android:drawablePadding="20dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="start|left|center_vertical"
+        android:drawableLeft="@mipmap/img_gs"
+        android:textSize="16sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="60dp">
+    <TextView
+        android:id="@+id/tv_zhongguo_bank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:drawableLeft="@mipmap/img_zg"
+        android:drawablePadding="20dp"
+        android:gravity="start|left|center_vertical"
+        android:text="中国银行"
+        android:textColor="@color/text_color_gray"
+        android:textSize="16sp" />
+    </RelativeLayout>
+    <!--  android:drawableLeft="@mipmap/img_ny"-->
+
+
+
+
+</LinearLayout>

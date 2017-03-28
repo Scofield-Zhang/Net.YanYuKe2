@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_tab" />
+
+    <RelativeLayout
+        android:id="@+id/rl_alter_deposit_pswd"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#fff"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            style="@style/wrap_xy"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/img_alter"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="修改提现密码"
+            android:textColor="@color/text_color_gray"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/arrows_right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#f0f0f0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#fff"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_recommond_code"
+            style="@style/wrap_xy"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/indictor"
+            android:gravity="center"
+            android:text="@string/my_recommond_code"
+            android:textColor="@color/text_color_gray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_referralCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="27dp"
+            android:layout_toRightOf="@id/tv_recommond_code"
+            android:src="@mipmap/arrows_right"
+            android:text="@string/recommond_code"
+            android:textColor="@color/stroke_color" />
+    </RelativeLayout>
+    <ListView
+        android:layout_width="wrap_content"
+        android:choiceMode="singleChoice"
+        android:layout_height="wrap_content">
+
+
+    </ListView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#f0f0f0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#fff"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_my_referrer"
+            style="@style/wrap_xy"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/indictor"
+            android:gravity="center"
+            android:text="@string/my_referrer"
+            android:textColor="@color/text_color_gray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_referrer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="27dp"
+            android:layout_toRightOf="@id/tv_my_referrer"
+            android:src="@mipmap/arrows_right"
+            android:text="@string/my_referrer_name"
+            android:textColor="@color/stroke_color" />
+
+    </RelativeLayout>
+</LinearLayout>

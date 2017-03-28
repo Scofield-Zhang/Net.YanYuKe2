@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow_line"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="342dp"
+        android:layout_height="170dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/tv_person_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="15dp"
+                android:text="袁先生/13538694268"
+                android:textColor="@color/text_color_gray"
+                android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_person_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_person_info"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/address_info"
+            android:textColor="@color/home_text_color"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true" >
+
+            <ImageView
+                android:id="@+id/has_choice"
+                style="@style/wrap_xy"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/selector_is_default_address" />
+
+            <TextView
+                style="@style/wrap_xy"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/has_choice"
+                android:gravity="center_vertical"
+                android:text="默认地址"
+                android:textColor="@color/home_text_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="15dp"
+                android:text="移除"
+                android:textColor="@color/home_text_color"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                style="@style/wrap_xy"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/tv_delete"
+                android:src="@mipmap/iv_delete" />
+
+            <ImageView
+                android:id="@+id/iv_edit"
+                style="@style/wrap_xy"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/tv_edit"
+                android:src="@mipmap/btn_write" />
+
+            <TextView
+                android:id="@+id/tv_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_delete"
+                android:layout_alignBottom="@+id/tv_delete"
+                android:layout_marginRight="40dp"
+                android:layout_toLeftOf="@+id/iv_delete"
+                android:text="编辑"
+                android:textColor="@color/home_text_color"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="3dp"
+                android:background="@color/stroke_color" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shadow_line" />
+    </RelativeLayout>
+
+</RelativeLayout>
